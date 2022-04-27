@@ -3,49 +3,41 @@
 <head>
     <meta charset="utf-8">
     <title>Radio station</title>
+    <style>
+        .navigation {
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: left;
+            list-style: none;
+            margin: 0; 
+            
+        }
 
+        nav a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: rgb(236, 233, 233);
+            align-items:baseline;
+            justify-content: space-around;
+        }
+        nav {
+            background: rgb(91, 91, 94);
+            display: flex;
+            justify-content: space-between;
+        }
+    
+
+    </style>
+  
+  
 </head>
 <body> 
     <header >
         <h1>My radio station</h1>
         <nav>
-            <style>
-              .navigation {
-                  text-align: center;
-                  display: flex;
-                 flex-flow: row wrap;
-                justify-content: left;
-  
-                list-style: none;
-                margin: 0; 
-             background: rgb(91, 91, 94);
-             gap: px;
-             
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: rgb(236, 233, 233);
-  align-items:baseline;
-  justify-content: space-around;
-}
-            .navigation1{
-           text-align: center;
-                  display: flex;
-                 flex-flow: row wrap;
-                justify-content: right;
-  
-                list-style: none;
-                margin: 0; 
-             background: rgb(91, 91, 94);
-             gap: 1000px;
-}
-
-
-            </style>
-        
+           
             <ul class="navigation">
                 <li >
                     <a href="index.html">Home</a>
@@ -59,15 +51,15 @@
                 <li>
                     <a href="contactus.html">Contact Us</a>
                 </li>
-                <li >
-                    <ul class="navigation1">
-                        
+            </ul>
+            
+            <ul class="navigation">
+                <li>
                     <a href="login.html">Log in</a>
                 </li>
                 <li>
                     <a href="signup.html">Registar</a>
                 </li>
-            
             </ul>
         </nav>
        
@@ -76,6 +68,7 @@
 <section>
     <h2>Featured radio stations</h2>
     <ul>
+        
         <li>
             <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
             <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
@@ -95,8 +88,34 @@
 </section>
 
 <section>
+
+
+<div class="image-grid">
+<style>
+
+    .image-grid {
+    --gap:16 px
+    --num-cols:4;
+    --row-height:30px;
+
+    box-sizing:border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    }
+
+    .image-grid > img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
     <h2>Popular radio stations</h2>
     <ol>
+    
         <li>
             <a href="https://amazingradios.com/amazing-80s" target="blank">
             <img src="images/amazing-80s-w180.webp" alt="amazing" ></a>
@@ -129,7 +148,7 @@
         <p>Amazing classic hits</p>
     </li>
     </ol>
-
+</div>
 </section>
 
 <aside >
