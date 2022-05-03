@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,27 +29,7 @@
             display: flex;
             justify-content: space-between;
         }
-    
 
-    </style>
-  <style>
-
-*{
-	margin: 0;
-	padding: 0;
-	outline: none;
-	box-sizing: border-box;
-	font-family: 'Comfortaa', cursive;
-}
-
-body{
-	background: url('concert.jpg') no-repeat center;
-	background-size: cover;
-	width: 100%;
-	height: 80vh;
-    background-color: black;
-    
-}
 
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
@@ -61,11 +40,17 @@ body{
 	box-sizing: border-box;
 	font-family: 'Comfortaa', cursive;
 }
+body{
+	background: url('concert.jpg') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+   
+    
+}
+
 .wrapper{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	margin: 200px auto 200px auto;
     background: rgba(0, 0, 0,0.6);
     max-width: 550px;
     width: 100%;
@@ -99,9 +84,78 @@ body{
     font-size: 18px;
 }
       }
+.genres{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    justify-items:left;
+            }
+            .genres li {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 1000px;
+            }
+            .types1 {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                justify-content: space-between;
+                color: black;
 
+            }
+            .genres li .types1 {
+                justify-content:right;
+            }
+           .footer{
+              justify-items: left;
+          }
+
+          .genres{
+                display: flex;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: darkblue;
+                justify-items:left;
+            }
+          .genres li {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 1000px;
+            }
+          .types1 {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                justify-content: space-between;
+                color: black;
+
+            }
+            .genres li .types1 {
+                justify-content:right;
+            }
+          .footer{
+              justify-items: left;
+          }
+
+          #mainWrapper {
+              display: flex;
+          }
+
+          .stationList {
+              display: grid;
+              grid-template-columns: 33% 33% 33%;
+          }
+          .mainSection{
+              display: flex;
+          }
   </style>
   
+
 </head>
 <body> 
     <header >
@@ -135,163 +189,186 @@ body{
        
     </header>
  
-    <div class="wrapper">
+    <form action="search.php" class="wrapper">
         <input type="text" class="input" 
         placeholder="What are you looking for?">
-        <div class="searchbtn"><i class="fas fa-search"></i></div>
+        <button class="searchbtn"><i class="fas fa-search"></i></button>
+    </form>
+
+    <div id="mainWrapper">
+        <main>
+            <section id="featured">
+                <h2>Featured radio stations</h2>
+                <ul class="stationList">
+                    
+                    <li>
+                        <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
+                        <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
+                    </a>
+                    <p>Amazing smooth and jazz</p>
+                    </li>
+                        
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-vocals" target="blank" >
+                        <img src="images/amazing-vocals-w180.webp" alt="vocals">
+                        </a>
+                        <p>Amazing vocals</p>
+                    </li>
+
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-vocals" target="blank" >
+                        <img src="images/amazing-vocals-w180.webp" alt="vocals">
+                        </a>
+                        <p>Amazing vocals</p>
+                    </li>
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
+                        <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
+                    </a>
+                    <p>Amazing smooth and jazz</p>
+                    </li>
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-vocals" target="blank" >
+                        <img src="images/amazing-vocals-w180.webp" alt="vocals">
+                        </a>
+                        <p>Amazing vocals</p>
+                    </li>
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
+                        <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
+                    </a>
+                    <p>Amazing smooth and jazz</p>
+                    </li>
+
+                    
+                </ul>
+            </section>
+
+            <section id="popular">
+
+                <h2>Popular radio stations</h2>
+                <ol class="stationList">
+                
+                    <li>
+                        <a href="https://amazingradios.com/amazing-80s" target="blank">
+                        <img src="images/amazing-80s-w180.webp" alt="amazing" ></a>
+                        <p>Amazing 80</p>
+                    
+                    </li>
+            
+                    <li>
+                        <a href="https://amazingradios.com/amazing-blues" target="blank">
+                        <img src="images/amazing-blues-w180.webp" alt="Blues" ></a>
+                        <p>Amazing Blues </p>
+                    </li>
+                
+                    <li>
+                        <a href="https://amazingradios.com/amazing-chillhop" target="blank">
+                            <img src="images/amazing-chillhop-w180.webp" alt="chillpop" >
+                        </a>
+                        <p>Ammazing chillpop</p>
+                        </li>
+                    
+                    <li> 
+                        <a href="https://amazingradios.com/amazing-chillout" target="blank">
+                            <img src="images/amazing-chillout-w180.webp" alt="chillout" >
+                        </a>
+                        <p>Amazing chillout</p>
+                    </li>
+                    <li>
+                        <a href="https://amazingradios.com/amazing-classic-hits" target="blank">
+                            <img src="images/amazing-classic-hits-w180.webp" alt="classic">
+                        </a> 
+                        <p>Amazing classic hits</p>
+                    </li>
+                    <li>
+                        <a href="https://amazingradios.com/amazing-chillhop" target="blank">
+                            <img src="images/amazing-chillhop-w180.webp" alt="chillpop" >
+                        </a>
+                        <p>Ammazing chillpop</p>
+                        </li>
+                </ol>
+            </section>
+
+
+
+            <h4>Genres</h4>
+
+            <div class="MainSection">
+                <ul>
+                <li >Ambient</li>
+                <li >Blues</li>
+                <li >Clasical</li>
+                <li >Clasical</li>
+                <li >Country</li>
+                <li >Electronic</li>
+                <li >Emo</li>
+                <li >Folk</li>
+                <li >Hardcore</li>
+                <li >Hip Hop</li>
+                <li >Indie</li>
+                <li >Jazz</li>
+                <li >Latin</li>
+                <li >Rock</li>
+                <li >Acoustic</li>
+                <li >Ambient</li>
+                <li >Blues</li>
+                <li>Clasical</li>
+                </ul>
+            </div>
+
+            <div class="MainSection">
+                <ul>
+                <li>Country</li>
+                <li>Indie</li>
+                <li >Acoustic</li>
+                <li>Ambient</li>
+                <li >Blues</li>
+                <li>Clasical</li>
+                <li>Country</li>
+                <li>Electronic</li>
+                <li>Emo</li>
+                <li>Folk</li>
+            
+            </ul>
+            </div>
+
+
+        </main>
+
+        <aside>
+            <p>Most popular.</p>
+
+            <ol class="stationList">
+            <li> 
+                <a href="https://amazingradios.com/amazing-chillout" target="blank">
+                    <img src="images/amazing-chillout-w180.webp" alt="chillout" >
+                </a>
+                <p>Amazing chillout</p>
+            </li>
+            <li>
+                <a href="https://amazingradios.com/amazing-classic-hits" target="blank">
+                    <img src="images/amazing-classic-hits-w180.webp" alt="classic">
+                </a> 
+                <p>Amazing classic hits</p>
+            </li>
+            <li>
+                <a href="https://amazingradios.com/amazing-chillhop" target="blank">
+                    <img src="images/amazing-chillhop-w180.webp" alt="chillpop" >
+                </a>
+                <p>Ammazing chillpop</p>
+                </li>
+        </ol>
+
+        </aside>
     </div>
 
-
-<section class="del">
-    <h2>Featured radio stations</h2>
-    <ul>
-        
-        <li>
-            <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
-            <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
-        </a>
-        <p>Amazing smooth and jazz</p>
-        </li>
-            
-
-        <li>
-            <a href="https://amazingradios.com/amazing-vocals" target="blank" >
-            <img src="images/amazing-vocals-w180.webp" alt="vocals">
-            </a>
-            <p>Amazing vocals</p>
-        </li>
-        
-    </ul>
-</section>
-<style>
-    .del{
-        position: relative; top: 700px; right: -750px;
-        justify-items: right;
-    }
-</style>
-<section class="del2">
-    <style>
-        .del2{
-            position:relative;
-            top: 250px; 
-
-        }
-    </style>
-
-    <h2>Popular radio stations</h2>
-    <ol>
-    
-        <li>
-            <a href="https://amazingradios.com/amazing-80s" target="blank">
-            <img src="images/amazing-80s-w180.webp" alt="amazing" ></a>
-            <p>Amazing 80</p>
-        
-        </li>
-  
-        <li>
-            <a class="anchor" href="https://amazingradios.com/amazing-blues" target="blank">
-            <img src="images/amazing-blues-w180.webp" alt="Blues" ></a>
-            <p>Amazing Blues </p>
-        </li>
-    
-                <li>
-                    <a href="https://amazingradios.com/amazing-chillhop" target="blank">
-                <img src="images/amazing-chillhop-w180.webp" alt="chillpop" > </a>
-            <p>Ammazing chillpop</p>
-            </li>
-        
-        <li> 
-            <a href="https://amazingradios.com/amazing-chillout" target="blank">
-            <img src="images/amazing-chillout-w180.webp" alt="chillout" >
-            </a>
-            <p>Amazing chillout</p>
-        </li>
-        <li>
-            <a class= href="https://amazingradios.com/amazing-classic-hits" target="blank">
-            <img src="images/amazing-classic-hits-w180.webp" alt="classic">
-        </a>
-      
-            
-        <p>Amazing classic hits</p>
-    </li>
-    </ol>
-</div>
-</section>
-
-<aside >
-    <p class="popularni">Most popular.</p>
-</aside>
-<style>
-    .popularni{
-        font-style: bold;
-        color:darkblue;
-    }
-</style>
-
-    <h4>Genres</h4>
-
-    <ul class="genres">
-        <style>
-            .genres{
-                display: flex;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                color: darkblue;
-                justify-items:left;
-            }
-            .genres li {
-                background-color: grey;
-                border: 1px solid black;
-                border-radius: 30%;
-                display: flex;
-                justify-content: space-between;
-                margin-left: 1000px;
-            }
-            .types1 {
-                background-color: grey;
-                border: 1px solid black;
-                border-radius: 30%;
-                justify-content: space-between;
-                color: black;
-
-            }
-            .genres li .types1 {
-                justify-content:right;
-            }
-          .footer{
-              justify-items: left;
-          }
-        </style>
-        <ul>
-        <li class="types2">Ambient</li>
-        <li class="types3">Blues</li>
-        <li class="types4">Clasical</li>
-        <li class="types5">Clasical</li>
-        <li class="types6">Country</li>
-        <li class="types7">Electronic</li>
-        <li class="types8" >Emo</li>
-        <li class="types9">Folk</li>
-        <li class="types10">Hardcore</li>
-        <li class="types">Hip Hop</li>
-        <li class="types">Indie</li>
-        <li class="types">Jazz</li>
-        <li class="types">Latin</li>
-        <li class="types">Rock</li>
-        <li class="types">Acoustic</li>
-        <li class="types1">Ambient</li>
-        <li class="types">Blues</li>
-        <li class="types">Clasical</li>
-        <li class="types">Country</li>
-        <li  class="types">Indie</li>
-        <li class="types" >Acoustic</li>
-        <li  class="types">Ambient</li>
-        <li  class="types">Blues</li>
-        <li class="types">Clasical</li>
-        <li class="types">Country</li>
-        <li  class="types">Electronic</li>
-        <li class="types">Emo</li>
-        <li class="types">Folk</li>
-       
-    </ul>
+   
     <footer>
     <p>Next tuner</p>
     
